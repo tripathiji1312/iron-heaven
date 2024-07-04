@@ -70,7 +70,7 @@
 }
 /* Main page  */
 .front-page{
-    z-index: -1;
+    /* z-index: -1; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -116,6 +116,7 @@
     color: black;
     /* font-size: 24px; */
 }
+/* About Us main page  */
 #about-us.main{
     height: 100vh;
     background-color: black;
@@ -147,7 +148,7 @@
 .about-content.main > div > p{
     padding: 20px ;
     /* text-align: center; */
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 1px;
     color: #3a3b3a;
@@ -156,4 +157,142 @@
     font-weight: 600;
     font-size: 25px;
     padding-left: 20px;
+}
+/* About us out story  */
+.our-story{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+}
+.about-content.our-story{
+    display: flex;
+    background-color: black;
+    height: 70vh;
+    width: 70%;
+    overflow: hidden;
+    position: absolute;
+}
+.about-content.our-story > img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.about-content.our-story > div > h1{
+    color: white;
+    padding-left: 20px;
+    display: block;
+    border-bottom: white solid 2px;
+    text-align: left;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 73px;
+    letter-spacing: 2px;
+}
+.about-content.our-story > div > p{
+    color: white;
+    padding: 20px ;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/* Plans  */
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+.plan.about-content{
+    display: flex;
+    background-color: white;
+    height: 65vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    justify-content: space-between;
+}.plan.about-content > img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.plan.about-content > div > h1{
+    color: black;
+    padding-left: 20px;
+    display: block;
+    border-bottom: black solid 2px;
+    text-align: left;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.plan.about-content > div > p{
+    padding: 20px ;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.plan.about-content > div > p > strong{
+    font-weight: 600;
+}
+.list-p{
+    letter-spacing: 1px;
+    /* list-style: none; */
+    padding-left: 20px;
+}
+.list-p > li{
+    font-size: 20px; 
+    font-weight: 400;
+}
+/* contact us  */
+.contact-us{
+    background-color: black;
+    height: 100vh;
+    background-image: url(./images/pexels-goumbik-669576.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us.about-content{
+    display: block;
+    height: 70vh;
+    width: 60%;
+    background-color: white;
+    background-image: none;
+}
+.contact-us.about-content > h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: "Anton", sans-serif;
+}
+form{
+    padding: 40px 20px;
+    margin-left: 10px;
+}
+label{
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+input{
+    width: 90%;
+    padding: 2px 10px;
+}
+.submit{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    width: 121px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
 }
