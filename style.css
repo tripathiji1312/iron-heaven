@@ -1,9 +1,11 @@
 * {
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    
+    font-weight: 200;
     font-style: normal;
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
     /* background-color: #dedede; */
 }
 /* Logo  */
@@ -12,16 +14,19 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* background-color: #333; */
+    background-color: white;
+    /* opacity: 0.5;; */
     /* color: white; */
     z-index: 1000;
 }
 .top-bar > .positioning {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .top-bar > .positioning >div {
+    
     display: flex;
     align-items: center;
 }
@@ -31,6 +36,7 @@
     height: auto;
 }
 .top-bar >.positioning > div > .logo{
+    font-family: "Anton", sans-serif;
     font-weight: 600;
     font-size: 40px;
     /* word-spacing: 2px; */
@@ -43,11 +49,13 @@
     margin-right: 20px;
 }
 .menu > ul > li{
+    
     padding: 0 20px;
     /* text-transform: none; */
     list-style: none;
 }
 .menu > ul > li > a{
+    font-family: "Anton", sans-serif;
     align-self: center;
     color: black;
     text-decoration: none;
@@ -59,4 +67,51 @@
 .menu > ul > li > a:hover{
     color: gray;
     border-bottom: 2px solid gray;
+}
+/* Main page  */
+.front-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front-page > div{
+    width: 45%;
+    margin-left: 80px;
+}
+.front-page > div> .quote{
+    font-family: "Anton", sans-serif;
+    font-style: italic;
+    font-size: 52px;
+    padding-bottom: 20px;
+}
+.front-page > div> .firstpage-cont{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #3a3b3a;
+    margin-bottom: 50px;
+}
+.front-page > img{
+    align-self: flex-end;
+    height: 90vh;
+}
+.join{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 27px;
+    margin-top: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    border: black solid 1px;
+    cursor:pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+.join:hover{
+    background-color: #d2d4d2;
+    border: black solid 1px;
+    color: black;
+    /* font-size: 24px; */
 }
