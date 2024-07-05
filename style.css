@@ -54,6 +54,13 @@
     /* text-transform: none; */
     list-style: none;
 }
+#book-btn{
+    background-color: rgb(187, 40, 40);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
 .menu > ul > li > a{
     font-family: "Anton", sans-serif;
     align-self: center;
@@ -69,6 +76,14 @@
     border-bottom: 2px solid gray;
 }
 /* Main page  */
+@keyframes frontpage-conter {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0);}
+}
+@keyframes frontpage-contel {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}
 .front-page{
     /* z-index: -1; */
     height: 100vh;
@@ -77,6 +92,8 @@
     align-items: center;
 }
 .front-page > div{
+    animation-name: frontpage-conter;
+    animation-duration: 3s;
     width: 45%;
     margin-left: 80px;
 }
@@ -94,6 +111,8 @@
     margin-bottom: 50px;
 }
 .front-page > img{
+    animation-name: frontpage-contel;
+    animation-duration: 3s;
     align-self: flex-end;
     height: 90vh;
 }
@@ -126,6 +145,7 @@
 }
 .about-content.main{
     display: flex;
+    border-radius: 5px;
     /* position: sticky; */
     /* left: 50%; */
     background-color: white;
@@ -167,6 +187,7 @@
     height: 100vh;
 }
 .about-content.our-story{
+    border-radius: 5px;
     display: flex;
     background-color: black;
     height: 70vh;
@@ -188,7 +209,7 @@
     font-family: "Anton", sans-serif;
     font-weight: 500;
     font-size: 73px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 .about-content.our-story > div > p{
     color: white;
@@ -198,57 +219,101 @@
     letter-spacing: 1px;
 }
 /* Plans  */
+@keyframes plan-key2 {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0);}
+}
+@keyframes plan-key1 {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}
 .plan {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: black;
     height: 100vh;
 }
-.plan.about-content{
+.plan > div{
+    box-shadow: 0 4px 8px 0 gray, 0 6px 10px 0 gray;
     display: flex;
+    /* background-color: white; */
+    width: 350px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.plan-1 > div, .plan-2 > div{
+    z-index: 2;
+    background-color: rgb(187, 40, 40);
+    border-radius: 0 160px 0 0;
+    width: 300px;
+    height: 400px;
+}
+.plan-2 > div{
     background-color: white;
-    height: 65vh;
+    border-radius: 160px 0 0 0;
+}
+.plan-1{
+    /* animation-name: plan-key1;
+    animation-duration: 2s; */
+    background-color: white;
+}
+.plan-1 > div > div{
+    color: white;
+}
+.plan-2{
+    /* animation-name: plan-key2;
+    animation-duration: 2s; */
+    background-color: rgb(187, 40, 40);
+}
+.plan-2 > div > div{
+    color: rgb(187, 40, 40);
+}
+.plan-img{
+}
+.plan > div > div{
+    /* margin: 0 20px; */
+    box-sizing: border-box;
+    padding: 30px 65px;
+}
+.plan-img > img{
+    border-radius: 0 100px 0 0;
+    object-fit:fill;
+    
     width: 100%;
-    overflow: hidden;
-    position: absolute;
-    justify-content: space-between;
-}.plan.about-content > img{
-    max-width: 100%;
+    /* max-width: 100%; */
     max-height: 100%;
-    object-fit: contain;
+
 }
-.plan.about-content > div > h1{
-    color: black;
-    padding-left: 20px;
-    display: block;
-    border-bottom: black solid 2px;
-    text-align: left;
-    font-family: "Anton", sans-serif;
-    font-weight: 500;
+.plan > div > div > h1{
+    line-height: 42px;
+    text-wrap: wrap;
     font-size: 40px;
-    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: "Anton", sans-serif;
 }
-.plan.about-content > div > p{
-    padding: 20px ;
+.plan > div > div > h2{
     font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
 }
-.plan.about-content > div > p > strong{
-    font-weight: 600;
+.plan > div > div > div{
+    font-size: 75px;
+    font-weight: 500;
+    font-family: "Anton", sans-serif;
 }
-.list-p{
-    letter-spacing: 1px;
-    /* list-style: none; */
-    padding-left: 20px;
-}
-.list-p > li{
-    font-size: 20px; 
-    font-weight: 400;
+.plan > div > div > a{
+    width: 160px;
+    color: white;
+    background-color: black;
+    padding: 5px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-decoration: none;
 }
 /* contact us  */
-.contact-us{
+/* .contact-us{
     background-color: black;
     height: 100vh;
     background-image: url(./images/pexels-goumbik-669576.jpg);
@@ -295,4 +360,97 @@ input{
     height: 40px;
     font-size: 20px;
     cursor: pointer;
+} */
+.contact-us{
+    letter-spacing: 1px;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us.form{
+    width: 60%;
+}
+form > h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+form > h2{
+    font-weight: 500;
+    font-size: 25px;  
+}
+label{
+    font-size: 20px;
+    line-height: 35px;
+}
+input{
+    color: white;
+    padding: 6px 40px;
+    padding-left: 5px;
+    outline: 0; 
+    border-width: 0 0 2px 0; 
+    background-color: transparent;
+    border-color: white; 
+    transition: padding 1s;
+}
+.form-sub{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #d2d4d2;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 23px;
+    width: 50%;
+}
+input:focus{
+    padding-right: 70%;
+}
+.form-sub:hover{
+    background-color: #3a3b3a;
+    color: white;
+}
+.contact-us.address{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin-right: 110px;
+}
+.contact-us.address > p{
+    font-size: 26px;
+    font-weight: 400;
+    width: 280px;
+    margin: 20px 0;
+}
+#p-mail{
+    margin-top: 0;
+    font-size: 20px;
+    width: 49%;
+}
+.trial-btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(187, 40, 40);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.trial-btn:hover{
+    background-color:#d2d4d2;
+    color: rgb(187, 40, 40);
+    border-color: rgb(187, 40, 40);
+}
+footer > div{
+    text-align: center;
+    height: 32px;
+    width: 100%;
+    background-color: rgb(187, 40, 40);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
 }
