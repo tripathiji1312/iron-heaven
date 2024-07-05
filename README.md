@@ -47,12 +47,12 @@ Iron-Heaven-Website/
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-username/Iron-Heaven-Website.git
+    git clone https://github.com/tripathiji1312/iron-heaven.git
     ```
 
 2. **Navigate to the project directory**:
     ```sh
-    cd Iron-Heaven-Website
+    cd iron-heaven
     ```
 
 3. **Open `index.html` in your web browser** to view the website.
