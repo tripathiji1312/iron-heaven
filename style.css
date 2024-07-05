@@ -219,14 +219,6 @@
     letter-spacing: 1px;
 }
 /* Plans  */
-@keyframes plan-key2 {
-    from {transform: translateX(100%);}
-    to {transform: translateX(0);}
-}
-@keyframes plan-key1 {
-    from {transform: translateX(-100%);}
-    to {transform: translateX(0);}
-}
 .plan {
     display: flex;
     align-items: center;
